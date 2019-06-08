@@ -124,8 +124,13 @@ void Puzzle::print(bool print_number)const{
                     x=' ';
                 }
                 for(int j=0;j<4;j++){
-                    if(i == 0 && j == 0 && c == ' '&& print_number){
-                        cout<<++cnt;
+                    if(i == 0 && j == 0 
+                            && x == ' ' && print_number
+                            && (
+                                !this->row_words[r][c].empty() 
+                                || !this->col_words[r][c].empty())
+                               ){
+                            cout<<++cnt;
                     }
                     else {
                         cout<<x;
