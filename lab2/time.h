@@ -18,8 +18,10 @@ class Time{
 
         // other member functions that operate on time objects
         bool isEqual(const Time &time2) const;
+        void PrintAMPM() const;
     private:
         int hour;
         int minute;
         int second;
 };
+bool IsEarlierThan(const Time &a, const Time &b);

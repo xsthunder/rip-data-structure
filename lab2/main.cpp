@@ -23,15 +23,12 @@ int main() {
 
   // UNCOMMENT THESE TESTS AS YOU WORK THROUGH CHECKPOINT 2
   
-  /*
   std::cout << "testing print" << std::endl;
   a.PrintAMPM();
   b.PrintAMPM();
   c.PrintAMPM();
   std::cout << std::endl;
-  */
 
-  /*
   std::cout << "testing modifiers" << std::endl;
   a.setHour(4);
   a.setMinute(32);
@@ -42,9 +39,7 @@ int main() {
   assert (a.getSecond() == 1);
   a.PrintAMPM();
   std::cout << std::endl;
-  */
 
-  /*
   std::cout << "more testing print" << std::endl;
   Time noon(12,0,0);
   Time midnight(0,0,0);
@@ -56,10 +51,8 @@ int main() {
   std::cout << "midnight2 ";
   midnight2.PrintAMPM();
   std::cout << std::endl;
-  */
 
 
-  /*
   std::cout << "testing sort" << std::endl;
   std::vector<Time> times;
 
@@ -80,13 +73,12 @@ int main() {
   times.push_back(Time(3,3,3));
   
   // also try some duplicates
-  // times.push_back(Time(2,2,2));
-  // times.push_back(Time(23,23,23));
+  times.push_back(Time(2,2,2));
+  times.push_back(Time(23,23,23));
 
   sort(times.begin(),times.end(),IsEarlierThan);
   for (int i = 0; i < times.size(); i++) {
     times[i].PrintAMPM();
   }
-  */
   
 }
