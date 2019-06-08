@@ -18,7 +18,7 @@ class Puzzle{
         int cols;
         const char *ACROSS = "ACROSS";
         const char *DOWN = "DOWN";
-        vector<string> puzzle;// we should use set here for the best efficiency
+        vector<string> puzzle;
         // use list to store words for best efficiency
         Words row_words; // store row word starting from i,j
         Words col_words; // store col word starting from i,j
