@@ -33,11 +33,13 @@ int main(int argc, char ** argv){
         }
         else if(argv[3] == PRINT_COORDINATES_OPT){
             puzzle.print();
-            //puzzle.print_coordinates();
+            cout<<endl;
+            puzzle.print_coordinates();
         }
         else if(argv[3] == PRINT_NUMBERED_OPT){
             puzzle.print(true);
-            //puzzle.print_numbered();
+            cout<<endl;
+            puzzle.print_numbered();
         }
     }
     return 0;

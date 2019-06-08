@@ -124,8 +124,7 @@ void Puzzle::print(bool print_number)const{
                     x=' ';
                 }
                 for(int j=0;j<4;j++){
-                    if(i == 0 && j == 0 
-                            && x == ' ' && print_number
+                    if(i == 0 && j == 0 && print_number
                             && (
                                 !this->row_words[r][c].empty() 
                                 || !this->col_words[r][c].empty())
@@ -141,5 +140,36 @@ void Puzzle::print(bool print_number)const{
             cout<<endl;
         }
         print_spliter_line(this->cols);
+    }
+}
+void Puzzle::print_coordinates()const{
+    this->__print_coordinates(this->row_words, this->ACROSS);
+    this->__print_coordinates(this->col_words, this->DOWN);
+}
+void Puzzle::__print_coordinates(const Puzzle::Words & words, const char * direction)const{
+    for(int r = 0;r<this->rows;r++){
+        for(int c=0;c<this->cols;c++){
+            const string & s = words[r][c];
+            if(!words[r][c].empty() ){
+                cout<<"("<<r<<","<<c<<")"<<" "<<direction<<" "<<s<<endl;;
+            }
+        }
+    }
+}
+void Puzzle::print_numbered()const{
+    this->__print_numbered(this->row_words, this->ACROSS);
+    cout<<endl;
+    this->__print_numbered(this->col_words, this->DOWN);
+}
+void Puzzle::__print_numbered(const Puzzle::Words & words, const char * direction)const{
+    cout<<direction<<endl;
+    int cnt = 0;
+    for(int r = 0;r<this->rows;r++){
+        for(int c=0;c<this->cols;c++){
+            const string & s = words[r][c];
+            if(!words[r][c].empty() ){
+                cout<<++cnt<<" "<<s<<endl;
+            }
+        }
     }
 }
