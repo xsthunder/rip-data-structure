@@ -35,7 +35,7 @@ void clear_resize_words(vector<vector<string> >&words, int rows ,int cols){
 void Puzzle::walk(){
     vector<vector<bool> > not_reached(this->rows); // two dimension array, false means not reached yet in col
     for(auto it=not_reached.begin();it!=not_reached.end();it++){
-        it->resize(this->cols, true); // initial with true value
+        it->resize(this->cols, true); // initialized with true value
     }
     clear_resize_words(this->row_words, this->rows, this->cols);
     clear_resize_words(this->col_words, this->rows, this->cols);
