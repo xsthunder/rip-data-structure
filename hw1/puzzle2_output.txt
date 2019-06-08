@@ -1,0 +1,7 @@
+'abcd' is not a word
+'aei' is not a word
+'bfj' is not a word
+'cgk' is not a word
+'dhl' is not a word
+'efgh' is not a word
+'ijkl' is not a word
