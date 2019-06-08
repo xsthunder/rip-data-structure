@@ -150,7 +150,7 @@ void Puzzle::__print_coordinates(const Puzzle::Words & words, const char * direc
     for(int r = 0;r<this->rows;r++){
         for(int c=0;c<this->cols;c++){
             const string & s = words[r][c];
-            if(!words[r][c].empty() ){
+            if(!s.empty() ){
                 cout<<"("<<r<<","<<c<<")"<<" "<<direction<<" "<<s<<endl;;
             }
         }
@@ -167,7 +167,7 @@ void Puzzle::__print_numbered(const Puzzle::Words & words, const char * directio
     for(int r = 0;r<this->rows;r++){
         for(int c=0;c<this->cols;c++){
             const string & s = words[r][c];
-            if(!words[r][c].empty() ){
+            if(!s.empty() ){
                 cout<<++cnt<<" "<<s<<endl;
             }
         }
