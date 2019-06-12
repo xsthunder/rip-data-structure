@@ -14,7 +14,7 @@ public:
   float y() const { return m_y; }
 
   // modifier
-  float set( float x, float y )
+  void set( float x, float y )
     { m_x = x; m_y = y; }
 
 private:

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Rectangle.h"
+using namespace std;
 
 
 Rectangle::Rectangle(const Point2D& lower_left, const Point2D& upper_right)
@@ -13,7 +14,21 @@ bool Rectangle::is_point_within(const Point2D& p) const {
     (p.x() >= m_lower_left.x() && p.y() >= m_lower_left.y());
 }
 
+bool Rectangle::add_point(const Point2D& p) {
+    if(this->is_point_within(p)){
+        this->m_points_contained.push_back(p);
+        return true;
+    }
+    return false;
+}
 
+void __points_in_rectangle(const Rectangle &r, const std::vector<Point2D> &points, vector<Point2D> &to_save){
+    for(const Point2D & p: points){
+        if(r.is_point_within(p)){
+            to_save.push_back(p);
+        }
+    }
+}
 std::vector<Point2D> points_in_both(const Rectangle& r1, const Rectangle& r2) {
   //  Use a reference/alias to access the vector of points in the two
   //  rectangles ** without copying ** these vectors.  Instead,
@@ -23,11 +38,13 @@ std::vector<Point2D> points_in_both(const Rectangle& r1, const Rectangle& r2) {
   const std::vector<Point2D> & r1_points = r1.points_contained();
   const std::vector<Point2D> & r2_points = r2.points_contained();
 
-
   // finish this implementation
   // create and return a vector that contains the points inside of both rectangles
 
-
+  std::vector<Point2D> to_save;
+  __points_in_rectangle(r1, r2_points, to_save);
+  __points_in_rectangle(r2, r1_points, to_save);
+  return to_save;
 }
 
 
