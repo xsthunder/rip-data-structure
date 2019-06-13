@@ -139,4 +139,18 @@ template <class T> void Vec<T>::resize(size_type n, const T& fill_in_value) {
     m_size = n;
   }
 }
+
+template <class T> int remove_matching_elements(Vec<T>& vec, const T& v){
+    int cnt = 0;
+    for(typename Vec<T>::iterator it = vec.begin();it!=vec.end();){
+        if(*it == v){
+            it = vec.erase(it);
+            cnt ++;
+        }
+        else{
+            it++;
+        }
+    }
+    return cnt;
+}
 #endif

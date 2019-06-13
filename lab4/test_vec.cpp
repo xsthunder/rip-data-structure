@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <cassert>
 using namespace std;
 
 #include "vec.h"
@@ -88,10 +89,20 @@ int main() {
     cout << " " << z[j];
   cout << endl;
 
-
-
   // ADD MORE TEST CASES HERE
 
-    
+  Vec<int> vv;
+  vv.push_back(11);
+  vv.push_back(22);
+  vv.push_back(33);
+  vv.push_back(11);
+  vv.push_back(55);
+  vv.push_back(22);
+  assert(remove_matching_elements(vv, 11)==2);
+  assert(remove_matching_elements(vv, 22)==2);
+  assert(vv.size()==2);
+  assert(vv[0] == 33);
+  assert(vv[1] == 55);
+
   return 0; 
 }
