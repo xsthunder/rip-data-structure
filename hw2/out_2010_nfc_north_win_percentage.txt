@@ -1,0 +1,5 @@
+ALL TEAMS, SORTED BY WIN PERCENTAGE:
+Bears     5  win(s) - 1  loss(es)   0.83
+Packers   4  win(s) - 2  loss(es)   0.67
+Lions     2  win(s) - 4  loss(es)   0.33
+Vikings   1  win(s) - 5  loss(es)   0.17

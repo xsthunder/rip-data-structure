@@ -1,0 +1,291 @@
+ALL GRAMS, SORTED BY POINTS DIFFERNTIAL:
+Lions        defeated   Raiders      28 - 27   differential =   1    total points =    55
+49ers        defeated   Eagles       24 - 23   differential =   1    total points =    47
+Titans       defeated   Texans       23 - 22   differential =   1    total points =    45
+Cardinals    lost to    Redskins     21 - 22   differential =   1    total points =    43
+Texans       defeated   Bengals      20 - 19   differential =   1    total points =    39
+Dolphins     lost to    Cowboys      19 - 20   differential =   1    total points =    39
+Dolphins     lost to    Browns       16 - 17   differential =   1    total points =    33
+Rams         defeated   Browns       13 - 12   differential =   1    total points =    25
+Falcons      defeated   Seahawks     30 - 28   differential =   2    total points =    58
+Bengals      lost to    Broncos      22 - 24   differential =   2    total points =    46
+49ers        lost to    Cardinals    19 - 21   differential =   2    total points =    40
+Jets         lost to    Dolphins     17 - 19   differential =   2    total points =    36
+49ers        defeated   Seahawks     19 - 17   differential =   2    total points =    36
+Redskins     lost to    Cowboys      16 - 18   differential =   2    total points =    34
+Titans       lost to    Jaguars      14 - 16   differential =   2    total points =    30
+Raiders      lost to    Bills        35 - 38   differential =   3    total points =    73
+Packers      defeated   Giants       38 - 35   differential =   3    total points =    73
+Giants       defeated   Cowboys      37 - 34   differential =   3    total points =    71
+Broncos      defeated   Vikings      35 - 32   differential =   3    total points =    67
+Patriots     lost to    Bills        31 - 34   differential =   3    total points =    65
+Saints       defeated   Panthers     30 - 27   differential =   3    total points =    57
+Cardinals    lost to    Ravens       27 - 30   differential =   3    total points =    57
+Cowboys      defeated   49ers        27 - 24   differential =   3    total points =    51
+Bills        lost to    Giants       24 - 27   differential =   3    total points =    51
+Cowboys      lost to    Jets         24 - 27   differential =   3    total points =    51
+Dolphins     lost to    Patriots     24 - 27   differential =   3    total points =    51
+Cowboys      defeated   Redskins     27 - 24   differential =   3    total points =    51
+Saints       defeated   Falcons      26 - 23   differential =   3    total points =    49
+Lions        defeated   Vikings      26 - 23   differential =   3    total points =    49
+Vikings      defeated   Panthers     24 - 21   differential =   3    total points =    45
+Bills        lost to    Bengals      20 - 23   differential =   3    total points =    43
+Browns       lost to    Bengals      20 - 23   differential =   3    total points =    43
+Raiders      defeated   Broncos      23 - 20   differential =   3    total points =    43
+Seahawks     lost to    Cardinals    20 - 23   differential =   3    total points =    43
+Chargers     lost to    Chiefs       20 - 23   differential =   3    total points =    43
+Steelers     defeated   Colts        23 - 20   differential =   3    total points =    43
+Cardinals    defeated   Rams         23 - 20   differential =   3    total points =    43
+Ravens       defeated   Steelers     23 - 20   differential =   3    total points =    43
+Browns       lost to    Cardinals    17 - 20   differential =   3    total points =    37
+Chiefs       lost to    Chargers     17 - 20   differential =   3    total points =    37
+Dolphins     lost to    Giants       17 - 20   differential =   3    total points =    37
+Texans       lost to    Colts        16 - 19   differential =   3    total points =    35
+Broncos      defeated   Dolphins     18 - 15   differential =   3    total points =    33
+Broncos      lost to    Titans       14 - 17   differential =   3    total points =    31
+Falcons      lost to    Buccaneers   13 - 16   differential =   3    total points =    29
+Broncos      defeated   Chargers     16 - 13   differential =   3    total points =    29
+Raiders      defeated   Chiefs       16 - 13   differential =   3    total points =    29
+Bears        lost to    Broncos      10 - 13   differential =   3    total points =    23
+Cardinals    lost to    Seahawks     10 - 13   differential =   3    total points =    23
+Seahawks     lost to    Browns       3  - 6    differential =   3    total points =    9 
+Lions        lost to    Packers      41 - 45   differential =   4    total points =    86
+Eagles       lost to    Falcons      31 - 35   differential =   4    total points =    66
+Lions        defeated   Cowboys      34 - 30   differential =   4    total points =    64
+Giants       defeated   Cardinals    31 - 27   differential =   4    total points =    58
+Chiefs       defeated   Colts        28 - 24   differential =   4    total points =    52
+Bills        lost to    Jets         24 - 28   differential =   4    total points =    52
+Giants       defeated   Patriots     24 - 20   differential =   4    total points =    44
+Buccaneers   defeated   Vikings      24 - 20   differential =   4    total points =    44
+Cardinals    defeated   Eagles       21 - 17   differential =   4    total points =    38
+Cowboys      lost to    Patriots     16 - 20   differential =   4    total points =    36
+Jets         lost to    Broncos      13 - 17   differential =   4    total points =    30
+Jaguars      lost to    Steelers     13 - 17   differential =   4    total points =    30
+Bears        defeated   Vikings      17 - 13   differential =   4    total points =    30
+Jaguars      lost to    Browns       10 - 14   differential =   4    total points =    24
+Steelers     defeated   Browns       13 - 9    differential =   4    total points =    22
+Steelers     defeated   Chiefs       13 - 9    differential =   4    total points =    22
+Chiefs       defeated   Broncos      7  - 3    differential =   4    total points =    10
+Panthers     lost to    Bears        29 - 34   differential =   5    total points =    63
+Chargers     defeated   Broncos      29 - 24   differential =   5    total points =    53
+Bears        lost to    Raiders      20 - 25   differential =   5    total points =    45
+Raiders      defeated   Texans       25 - 20   differential =   5    total points =    45
+Vikings      lost to    Chiefs       17 - 22   differential =   5    total points =    39
+Ravens       lost to    Seahawks     17 - 22   differential =   5    total points =    39
+Saints       defeated   Titans       22 - 17   differential =   5    total points =    39
+Packers      lost to    Chiefs       14 - 19   differential =   5    total points =    33
+49ers        defeated   Bengals      13 - 8    differential =   5    total points =    21
+Ravens       lost to    Jaguars      7  - 12   differential =   5    total points =    19
+Vikings      lost to    Lions        28 - 34   differential =   6    total points =    62
+Packers      defeated   Vikings      33 - 27   differential =   6    total points =    60
+Bears        defeated   Eagles       30 - 24   differential =   6    total points =    54
+Chargers     lost to    Jets         21 - 27   differential =   6    total points =    48
+Raiders      defeated   Vikings      27 - 21   differential =   6    total points =    48
+Saints       lost to    Buccaneers   20 - 26   differential =   6    total points =    46
+49ers        defeated   Lions        25 - 19   differential =   6    total points =    44
+Bears        defeated   Buccaneers   24 - 18   differential =   6    total points =    42
+Titans       defeated   Bills        23 - 17   differential =   6    total points =    40
+Titans       lost to    Falcons      17 - 23   differential =   6    total points =    40
+Redskins     defeated   Seahawks     23 - 17   differential =   6    total points =    40
+Buccaneers   lost to    Titans       17 - 23   differential =   6    total points =    40
+Jaguars      lost to    Titans       17 - 23   differential =   6    total points =    40
+Browns       lost to    Ravens       14 - 20   differential =   6    total points =    34
+Cowboys      lost to    Cardinals    13 - 19   differential =   6    total points =    32
+Rams         lost to    Cardinals    13 - 19   differential =   6    total points =    32
+Colts        lost to    Jaguars      13 - 19   differential =   6    total points =    32
+Jaguars      lost to    Panthers     10 - 16   differential =   6    total points =    26
+Packers      defeated   Chargers     45 - 38   differential =   7    total points =    83
+Texans       lost to    Saints       33 - 40   differential =   7    total points =    73
+49ers        defeated   Rams         34 - 27   differential =   7    total points =    61
+Patriots     defeated   Redskins     34 - 27   differential =   7    total points =    61
+Vikings      defeated   Redskins     33 - 26   differential =   7    total points =    59
+Eagles       lost to    Bills        24 - 31   differential =   7    total points =    55
+Colts        lost to    Patriots     24 - 31   differential =   7    total points =    55
+Bengals      lost to    Ravens       24 - 31   differential =   7    total points =    55
+Dolphins     defeated   Bills        30 - 23   differential =   7    total points =    53
+Packers      defeated   Panthers     30 - 23   differential =   7    total points =    53
+Panthers     lost to    Cardinals    21 - 28   differential =   7    total points =    49
+Giants       lost to    49ers        20 - 27   differential =   7    total points =    47
+Lions        defeated   Buccaneers   27 - 20   differential =   7    total points =    47
+Steelers     defeated   Bengals      24 - 17   differential =   7    total points =    41
+Colts        lost to    Buccaneers   17 - 24   differential =   7    total points =    41
+Raiders      defeated   Chargers     24 - 17   differential =   7    total points =    41
+Vikings      lost to    Chargers     17 - 24   differential =   7    total points =    41
+Browns       lost to    Raiders      17 - 24   differential =   7    total points =    41
+Bengals      defeated   Titans       24 - 17   differential =   7    total points =    41
+Cardinals    lost to    Bengals      16 - 23   differential =   7    total points =    39
+Falcons      defeated   Lions        23 - 16   differential =   7    total points =    39
+Texans       defeated   Jaguars      20 - 13   differential =   7    total points =    33
+Bengals      defeated   Rams         20 - 13   differential =   7    total points =    33
+Eagles       defeated   Redskins     20 - 13   differential =   7    total points =    33
+Broncos      defeated   Chiefs       17 - 10   differential =   7    total points =    27
+Eagles       defeated   Giants       17 - 10   differential =   7    total points =    27
+Redskins     defeated   Rams         17 - 10   differential =   7    total points =    27
+Falcons      lost to    Texans       10 - 17   differential =   7    total points =    27
+Steelers     lost to    Texans       10 - 17   differential =   7    total points =    27
+Chiefs       defeated   Bears        10 - 3    differential =   7    total points =    13
+Saints       lost to    Packers      34 - 42   differential =   8    total points =    76
+Falcons      defeated   Panthers     31 - 23   differential =   8    total points =    54
+Browns       defeated   Colts        27 - 19   differential =   8    total points =    46
+Panthers     defeated   Colts        27 - 19   differential =   8    total points =    46
+Patriots     lost to    Steelers     17 - 25   differential =   8    total points =    42
+Ravens       defeated   Bengals      24 - 16   differential =   8    total points =    40
+49ers        defeated   Redskins     19 - 11   differential =   8    total points =    30
+Buccaneers   lost to    Packers      26 - 35   differential =   9    total points =    61
+Jets         lost to    Patriots     21 - 30   differential =   9    total points =    51
+Jets         lost to    Raiders      24 - 34   differential =   10   total points =    58
+Saints       lost to    Rams         21 - 31   differential =   10   total points =    52
+Bengals      defeated   Jaguars      30 - 20   differential =   10   total points =    50
+Packers      defeated   Bears        27 - 17   differential =   10   total points =    44
+Colts        lost to    Bengals      17 - 27   differential =   10   total points =    44
+Bengals      defeated   Browns       27 - 17   differential =   10   total points =    44
+Dolphins     lost to    Chargers     16 - 26   differential =   10   total points =    42
+Vikings      lost to    Falcons      14 - 24   differential =   10   total points =    38
+Jaguars      lost to    Texans       14 - 24   differential =   10   total points =    38
+Seahawks     lost to    Cowboys      13 - 23   differential =   10   total points =    36
+Texans       defeated   Dolphins     23 - 13   differential =   10   total points =    36
+Browns       lost to    49ers        10 - 20   differential =   10   total points =    30
+49ers        lost to    Ravens       6  - 16   differential =   10   total points =    22
+Seahawks     defeated   Giants       36 - 25   differential =   11   total points =    61
+Chargers     lost to    Bears        20 - 31   differential =   11   total points =    51
+Buccaneers   lost to    Saints       16 - 27   differential =   11   total points =    43
+Packers      defeated   Falcons      25 - 14   differential =   11   total points =    39
+Bears        lost to    Lions        13 - 24   differential =   11   total points =    37
+Redskins     lost to    Dolphins     9  - 20   differential =   11   total points =    29
+Browns       lost to    Steelers     3  - 14   differential =   11   total points =    17
+Chargers     defeated   Raiders      38 - 26   differential =   12   total points =    64
+Steelers     defeated   Cardinals    32 - 20   differential =   12   total points =    52
+Patriots     defeated   Raiders      31 - 19   differential =   12   total points =    50
+Rams         lost to    Giants       16 - 28   differential =   12   total points =    44
+Packers      defeated   Lions        27 - 15   differential =   12   total points =    42
+Redskins     lost to    Panthers     20 - 33   differential =   13   total points =    53
+Giants       defeated   Eagles       29 - 16   differential =   13   total points =    45
+Ravens       lost to    Titans       13 - 26   differential =   13   total points =    39
+Redskins     defeated   Giants       23 - 10   differential =   13   total points =    33
+Saints       defeated   Jaguars      23 - 10   differential =   13   total points =    33
+Eagles       defeated   Cowboys      20 - 7    differential =   13   total points =    27
+Panthers     lost to    Lions        35 - 49   differential =   14   total points =    84
+Patriots     defeated   Dolphins     38 - 24   differential =   14   total points =    62
+Broncos      defeated   Raiders      38 - 24   differential =   14   total points =    62
+Bears        lost to    Packers      21 - 35   differential =   14   total points =    56
+Chargers     lost to    Patriots     21 - 35   differential =   14   total points =    56
+Panthers     lost to    Falcons      17 - 31   differential =   14   total points =    48
+Lions        lost to    Saints       17 - 31   differential =   14   total points =    48
+Giants       lost to    Redskins     14 - 28   differential =   14   total points =    42
+Titans       lost to    Colts        13 - 27   differential =   14   total points =    40
+Ravens       defeated   Browns       24 - 10   differential =   14   total points =    34
+Colts        lost to    Ravens       10 - 24   differential =   14   total points =    34
+Jaguars      defeated   Colts        17 - 3    differential =   14   total points =    20
+Jets         defeated   Redskins     34 - 19   differential =   15   total points =    53
+Giants       defeated   Jets         29 - 14   differential =   15   total points =    43
+Texans       lost to    Ravens       14 - 29   differential =   15   total points =    43
+Panthers     defeated   Texans       28 - 13   differential =   15   total points =    41
+Seahawks     lost to    49ers        17 - 33   differential =   16   total points =    50
+Cowboys      defeated   Buccaneers   31 - 15   differential =   16   total points =    46
+Jets         defeated   Bills        27 - 11   differential =   16   total points =    38
+Eagles       defeated   Dolphins     26 - 10   differential =   16   total points =    36
+Cardinals    lost to    49ers        7  - 23   differential =   16   total points =    30
+Jets         lost to    Ravens       17 - 34   differential =   17   total points =    51
+Cowboys      lost to    Giants       14 - 31   differential =   17   total points =    45
+Eagles       lost to    Seahawks     14 - 31   differential =   17   total points =    45
+Bears        lost to    Saints       13 - 30   differential =   17   total points =    43
+Rams         lost to    Seahawks     13 - 30   differential =   17   total points =    43
+Colts        lost to    Titans       10 - 27   differential =   17   total points =    37
+Seahawks     defeated   Rams         24 - 7    differential =   17   total points =    31
+Steelers     lost to    49ers        3  - 20   differential =   17   total points =    23
+Patriots     defeated   Broncos      41 - 23   differential =   18   total points =    64
+Patriots     defeated   Eagles       38 - 20   differential =   18   total points =    58
+Titans       defeated   Browns       31 - 13   differential =   18   total points =    44
+Eagles       defeated   Rams         31 - 13   differential =   18   total points =    44
+Falcons      lost to    Bears        12 - 30   differential =   18   total points =    42
+Browns       lost to    Texans       12 - 30   differential =   18   total points =    42
+Dolphins     lost to    Jets         6  - 24   differential =   18   total points =    30
+Panthers     defeated   Buccaneers   38 - 19   differential =   19   total points =    57
+Ravens       lost to    Chargers     14 - 34   differential =   20   total points =    48
+Raiders      lost to    Dolphins     14 - 34   differential =   20   total points =    48
+Buccaneers   lost to    Falcons      24 - 45   differential =   21   total points =    69
+Titans       lost to    Steelers     17 - 38   differential =   21   total points =    55
+Patriots     defeated   Jets         37 - 16   differential =   21   total points =    53
+Rams         lost to    Packers      3  - 24   differential =   21   total points =    27
+Saints       defeated   Vikings      42 - 20   differential =   22   total points =    62
+Bengals      defeated   Seahawks     34 - 12   differential =   22   total points =    46
+Redskins     lost to    Bills        0  - 23   differential =   23   total points =    23
+Seahawks     defeated   Bears        38 - 14   differential =   24   total points =    52
+Chargers     defeated   Jaguars      38 - 14   differential =   24   total points =    52
+Lions        lost to    Bears        13 - 37   differential =   24   total points =    50
+Redskins     lost to    Eagles       10 - 34   differential =   24   total points =    44
+Cardinals    lost to    Vikings      10 - 34   differential =   24   total points =    44
+Falcons      defeated   Colts        31 - 7    differential =   24   total points =    38
+Seahawks     lost to    Steelers     0  - 24   differential =   24   total points =    24
+Giants       lost to    Saints       24 - 49   differential =   25   total points =    73
+Broncos      lost to    Packers      23 - 49   differential =   26   total points =    72
+Jets         lost to    Eagles       19 - 45   differential =   26   total points =    64
+Broncos      lost to    Bills        14 - 40   differential =   26   total points =    54
+Rams         lost to    49ers        0  - 26   differential =   26   total points =    26
+Jaguars      lost to    Falcons      14 - 41   differential =   27   total points =    55
+Buccaneers   lost to    Jaguars      14 - 41   differential =   27   total points =    55
+Bills        lost to    Chargers     10 - 37   differential =   27   total points =    47
+Chiefs       lost to    Jets         10 - 37   differential =   27   total points =    47
+Bills        lost to    Dolphins     8  - 35   differential =   27   total points =    43
+Rams         lost to    Cowboys      7  - 34   differential =   27   total points =    41
+Cowboys      lost to    Eagles       7  - 34   differential =   27   total points =    41
+Colts        lost to    Texans       7  - 34   differential =   27   total points =    41
+Titans       defeated   Panthers     30 - 3    differential =   27   total points =    33
+Rams         lost to    Steelers     0  - 27   differential =   27   total points =    27
+Bills        lost to    Patriots     21 - 49   differential =   28   total points =    70
+Panthers     lost to    Saints       17 - 45   differential =   28   total points =    62
+Chargers     lost to    Lions        10 - 38   differential =   28   total points =    48
+Texans       defeated   Buccaneers   37 - 9    differential =   28   total points =    46
+Steelers     lost to    Ravens       7  - 35   differential =   28   total points =    42
+Bengals      lost to    Steelers     7  - 35   differential =   28   total points =    42
+Dolphins     defeated   Chiefs       31 - 3    differential =   28   total points =    34
+Chiefs       defeated   Raiders      28 - 0    differential =   28   total points =    28
+Falcons      lost to    Saints       16 - 45   differential =   29   total points =    61
+Vikings      lost to    Bears        10 - 39   differential =   29   total points =    49
+Jaguars      lost to    Jets         3  - 32   differential =   29   total points =    35
+Raiders      lost to    Packers      16 - 46   differential =   30   total points =    62
+Ravens       defeated   Rams         37 - 7    differential =   30   total points =    44
+Chiefs       lost to    Patriots     3  - 34   differential =   31   total points =    37
+Buccaneers   lost to    Panthers     16 - 48   differential =   32   total points =    64
+Bills        defeated   Chiefs       41 - 7    differential =   34   total points =    48
+Texans       defeated   Titans       41 - 7    differential =   34   total points =    48
+Lions        defeated   Broncos      45 - 10   differential =   35   total points =    55
+Bills        lost to    Cowboys      7  - 44   differential =   37   total points =    51
+Vikings      lost to    Packers      7  - 45   differential =   38   total points =    52
+Buccaneers   lost to    49ers        3  - 48   differential =   45   total points =    51
+Chiefs       lost to    Lions        3  - 48   differential =   45   total points =    51
+Colts        lost to    Saints       7  - 62   differential =   55   total points =    69
+ALL TEAMS, SORTED BY WIN PERCENTAGE:
+Packers      15 win(s) - 1  loss(es)   0.94
+49ers        13 win(s) - 3  loss(es)   0.81
+Patriots     13 win(s) - 3  loss(es)   0.81
+Saints       13 win(s) - 3  loss(es)   0.81
+Ravens       12 win(s) - 4  loss(es)   0.75
+Steelers     12 win(s) - 4  loss(es)   0.75
+Falcons      10 win(s) - 6  loss(es)   0.62
+Lions        10 win(s) - 6  loss(es)   0.62
+Texans       10 win(s) - 6  loss(es)   0.62
+Bengals      9  win(s) - 7  loss(es)   0.56
+Giants       9  win(s) - 7  loss(es)   0.56
+Titans       9  win(s) - 7  loss(es)   0.56
+Bears        8  win(s) - 8  loss(es)   0.50
+Broncos      8  win(s) - 8  loss(es)   0.50
+Cardinals    8  win(s) - 8  loss(es)   0.50
+Chargers     8  win(s) - 8  loss(es)   0.50
+Cowboys      8  win(s) - 8  loss(es)   0.50
+Eagles       8  win(s) - 8  loss(es)   0.50
+Jets         8  win(s) - 8  loss(es)   0.50
+Raiders      8  win(s) - 8  loss(es)   0.50
+Chiefs       7  win(s) - 9  loss(es)   0.44
+Seahawks     7  win(s) - 9  loss(es)   0.44
+Bills        6  win(s) - 10 loss(es)   0.38
+Dolphins     6  win(s) - 10 loss(es)   0.38
+Panthers     6  win(s) - 10 loss(es)   0.38
+Jaguars      5  win(s) - 11 loss(es)   0.31
+Redskins     5  win(s) - 11 loss(es)   0.31
+Browns       4  win(s) - 12 loss(es)   0.25
+Buccaneers   4  win(s) - 12 loss(es)   0.25
+Vikings      3  win(s) - 13 loss(es)   0.19
+Colts        2  win(s) - 14 loss(es)   0.12
+Rams         2  win(s) - 14 loss(es)   0.12
+TODO implement print_creative

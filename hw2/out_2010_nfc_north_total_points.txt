@@ -1,0 +1,13 @@
+ALL GRAMS, SORTED BY POINTS DIFFERNTIAL:
+Lions     lost to    Packers   26 - 28   differential =   2    total points =    54
+Packers   lost to    Bears     17 - 20   differential =   3    total points =    37
+Vikings   lost to    Packers   24 - 28   differential =   4    total points =    52
+Bears     defeated   Lions     24 - 20   differential =   4    total points =    44
+Packers   lost to    Lions     3  - 7    differential =   4    total points =    10
+Lions     lost to    Bears     14 - 19   differential =   5    total points =    33
+Vikings   lost to    Lions     13 - 20   differential =   7    total points =    33
+Bears     lost to    Packers   3  - 10   differential =   7    total points =    13
+Vikings   lost to    Bears     13 - 27   differential =   14   total points =    40
+Lions     lost to    Vikings   10 - 24   differential =   14   total points =    34
+Bears     defeated   Vikings   40 - 14   differential =   26   total points =    54
+Packers   defeated   Vikings   31 - 3    differential =   28   total points =    34

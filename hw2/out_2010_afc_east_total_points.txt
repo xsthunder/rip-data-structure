@@ -1,0 +1,13 @@
+ALL GRAMS, SORTED BY POINTS DIFFERNTIAL:
+Bills      defeated   Dolphins   17 - 14   differential =   3    total points =    31
+Dolphins   defeated   Jets       10 - 6    differential =   4    total points =    16
+Dolphins   defeated   Bills      15 - 10   differential =   5    total points =    25
+Bills      lost to    Patriots   30 - 38   differential =   8    total points =    68
+Jets       defeated   Dolphins   31 - 23   differential =   8    total points =    54
+Patriots   lost to    Jets       14 - 28   differential =   14   total points =    42
+Jets       defeated   Bills      38 - 14   differential =   24   total points =    52
+Patriots   defeated   Dolphins   41 - 14   differential =   27   total points =    55
+Bills      lost to    Jets       7  - 38   differential =   31   total points =    45
+Dolphins   lost to    Patriots   7  - 38   differential =   31   total points =    45
+Patriots   defeated   Bills      34 - 3    differential =   31   total points =    37
+Jets       lost to    Patriots   3  - 45   differential =   42   total points =    48
