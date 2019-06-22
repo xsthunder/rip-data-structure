@@ -12,12 +12,22 @@ void print(std::vector<T> &data, const std::string &label) {
   std::cout << std::endl;
 }
 
+template <class T>
+void swap(T &a, T &b) {
+    T c = b;
+    b = a;
+    a = c;
+}
 
 template <class T>
 void reverse(std::vector<T> &data) {
-
   // FILL IN THIS FUNCTION
-  
+    for(int i =0;i<data.size();i++){
+        int j = data.size()-1-i;
+        if(i<j){
+            swap(data[i], data[j]);
+        }
+    }
 }
 
 
