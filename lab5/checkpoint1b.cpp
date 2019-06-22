@@ -1,13 +1,13 @@
 #include <iostream>
 #include <string>
-#include <vector>
+#include <list>
 
 
 template <class T>
-void print(std::vector<T> &data, const std::string &label) {
+void print(std::list<T> &data, const std::string &label) {
   std::cout << label << " ";
-  for (int i = 0; i < data.size(); i++) {
-    std::cout << " " << data[i];
+  for(const T& x:data){
+      std::cout<<" "<<x;
   }
   std::cout << std::endl;
 }
@@ -20,19 +20,25 @@ void swap(T &a, T &b) {
 }
 
 template <class T>
-void reverse(std::vector<T> &data) {
+void reverse(std::list<T> &data) {
   // FILL IN THIS FUNCTION
-    for(int i =0;i<data.size();i++){
-        int j = data.size()-1-i;
-        if(i<j){
-            swap(data[i], data[j]);
-        }
-    }
+   typedef typename std::list<T>::iterator IT;
+   typedef typename std::list<T>::reverse_iterator RIT;
+   int cnt=0;
+   const int n = data.size();
+   IT it = data.begin();
+   RIT rit = data.rbegin();
+   while(cnt < n){
+       swap(*it, *rit);
+       cnt += 2;
+       it++;
+       rit++;
+   }
 }
 
 
 int main() {
-  std::vector<int> data;
+  std::list<int> data;
   data.push_back(1);
   data.push_back(2);
   data.push_back(3);
@@ -45,7 +51,7 @@ int main() {
   reverse(data);
   print(data,"after: ");
 
-  std::vector<std::string> data2;
+  std::list<std::string> data2;
   data2.push_back("apple");
   data2.push_back("banana");
   data2.push_back("carrot");
