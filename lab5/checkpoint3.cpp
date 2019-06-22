@@ -29,9 +29,18 @@ void print(Node<T> *data, const std::string &label) {
 
 template <class T>
 void reverse(Node<T>* &input) {
-
   // FILL IN THIS FUNCTION
-
+    typedef Node<T>* NodePtr;
+    if(input == NULL)return; // empty list
+    NodePtr p = input, nxt = input->ptr;
+    NodePtr prev = NULL;
+    while(p!=NULL){
+        nxt = p->ptr;
+        p->ptr = prev;
+        prev = p;
+        p = nxt;
+    }
+    input = prev;
 }
 
 
@@ -55,6 +64,30 @@ int main() {
   reverse(my_list);
   print(my_list,"my_list after ");
 
+  // test 0
+  Node<int>* list_0 = NULL;
+  print(list_0,"list_0 before");
+  reverse(list_0 );
+  print(list_0,"list_0 after ");
+
+  // test 1 
+  Node<int>* list_1 = new Node<int>; 
+  list_1->value = 1; 
+  list_1->ptr = NULL;
+  print(list_1,"list_1 before");
+  reverse(list_1);
+  print(list_1,"list_1 after ");
+
+
+  // test 2
+  Node<int>* list_2 = new Node<int>; 
+  list_2->value = 1; 
+  list_2->ptr = new Node<int>;
+  list_2->ptr->value = 2;
+  list_2->ptr->ptr = NULL;
+  print(list_2,"list_2 before");
+  reverse(list_2);
+  print(list_2,"list_2 after ");
 
   // Note: We are not deleting any of the Nodes we created...  so this
   // program has memory leaks!  More on this in lecture 11.
