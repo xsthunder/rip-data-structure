@@ -103,6 +103,10 @@ int main() {
   assert(vv.size()==2);
   assert(vv[0] == 33);
   assert(vv[1] == 55);
+  for(int i = 0;i<50;i++){
+      vv.push_back(i);
+  }
+  vv.print();
 
   return 0; 
 }

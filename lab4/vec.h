@@ -1,5 +1,7 @@
 #ifndef Vec_h_
 #define Vec_h_
+#include<iostream>
+using namespace std;
 // Simple implementation of the vector class, revised from Koenig and Moo.  This 
 // class is implemented using a dynamically allocated array (of templated type T).  
 // We ensure that that m_size is always <= m_alloc and when a push_back or resize 
@@ -35,6 +37,7 @@ public:
   const_iterator begin() const { return m_data; }
   iterator end() { return m_data + m_size; }
   const_iterator end() const { return m_data + m_size; }
+  void print();
 
 private:  
   // PRIVATE MEMBER FUNCTIONS
@@ -152,5 +155,13 @@ template <class T> int remove_matching_elements(Vec<T>& vec, const T& v){
         }
     }
     return cnt;
+}
+template <class T> void Vec<T>::print(){
+    cout<<"m_size:"<<this->m_size<<endl;
+    cout<<"m_alloc:"<<this->m_alloc<<endl;
+    cout<<"elements are:"<<endl;
+    for(int i =0 ;i<m_size;i++){
+        cout<<i<<":"<<this->m_data[i]<<endl;
+    }
 }
 #endif
