@@ -1,0 +1,18 @@
+~~Dr.M~~ Dr. Memory version 2.2.0
+~~Dr.M~~ 
+~~Dr.M~~ Error #1: LEAK 24 direct bytes 0x00007fb5585dc1d0-0x00007fb5585dc1e8 + 216 indirect bytes
+~~Dr.M~~ # 0 replace_operator_new               [/drmemory_package/common/alloc_replace.c:2900]
+~~Dr.M~~ # 1 dslist<>::push_back                [/mnt/c/wsl-workspace/git/rpi-data-structure/lab6/dslist.h:151]
+~~Dr.M~~ # 2 main                               [/mnt/c/wsl-workspace/git/rpi-data-structure/lab6/lab6.cpp:15]
+~~Dr.M~~ 
+~~Dr.M~~ ERRORS FOUND:
+~~Dr.M~~       0 unique,     0 total unaddressable access(es)
+~~Dr.M~~       0 unique,     0 total uninitialized access(es)
+~~Dr.M~~       0 unique,     0 total invalid heap argument(s)
+~~Dr.M~~       0 unique,     0 total warning(s)
+~~Dr.M~~       1 unique,     1 total,    240 byte(s) of leak(s)
+~~Dr.M~~       0 unique,     0 total,      0 byte(s) of possible leak(s)
+~~Dr.M~~ ERRORS IGNORED:
+~~Dr.M~~      16 unique,    34 total,  90571 byte(s) of still-reachable allocation(s)
+~~Dr.M~~          (re-run with "-show_reachable" for details)
+~~Dr.M~~ Details: /home/xs/installation/DrMemory-Linux-2.2.0-1/drmemory/logs/DrMemory-a.out.1477.000/results.txt
