@@ -94,28 +94,31 @@ private:
   // PRIVATE HELPER FUNCTIONS
   TreeNode<T>*  copy_tree(TreeNode<T>* old_root) {
     // Implemented in Lab 9
-
-
-
-
-
-
-
-
-
-
+    if(old_root == NULL)return NULL;
+    TreeNode<T>* new_root = new TreeNode<T>(old_root->value);
+    new_root->left = copy_tree(old_root->left);
+    new_root->right = copy_tree(old_root->right);
+    return new_root;
   }
 
   void destroy_tree(TreeNode<T>* p) { /* Implemented in Lecture 18 */  }
 
   iterator find(const T& key_value, TreeNode<T>* p) {
+    while(p && p->value!=key_value){
+     if (p->value > key_value)
+       p = p->left;
+     else 
+         p = p->right;
+    }
     if (!p) return iterator(NULL);
-    if (p->value > key_value)
-      return find(key_value, p->left);
-    else if (p->value < key_value)
-      return find(key_value, p->right);
-    else
-      return iterator(p);
+    return iterator(p);
+    // if (!p) return iterator(NULL);
+    // if (p->value > key_value)
+    //   return find(key_value, p->left);
+    // else if (p->value < key_value)
+    //   return find(key_value, p->right);
+    // else
+    //   return iterator(p);
   }
 
   std::pair<iterator,bool> insert(const T& key_value, TreeNode<T>*& p) {

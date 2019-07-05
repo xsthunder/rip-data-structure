@@ -1,0 +1,30 @@
+The set size is 7
+Here are the elements: 
+abc
+daddy
+friend
+good-bye
+hello
+puppy
+zebra
+
+"foo" is not in the set
+"puppy" is in the set
+The iterator points to puppy
+"daddy" is in the set
+The iterator points to daddy
+
+Here is the tree, printed sideways.
+The indentation is proportional to the depth of the node
+so that the value stored at the root is the only value printed
+without indentation.  Also, for each node, the right subtree
+can be found above where the node is printed and indented
+relative to it
+
+        zebra
+    puppy
+hello
+    good-bye
+        friend
+                daddy
+            abc
