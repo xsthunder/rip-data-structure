@@ -87,7 +87,15 @@ void print_grid(vector<vector<bool> > const& blocked_grid, int start_x, int star
   }
 }
 
-
+long long dfs(const vector<vector<bool> > &blocked_grid, int x, int y){
+    if(x == 0 && y == 0){
+        return 1;
+    }
+    long long ac = 0;
+    if(x-1>=0 && !blocked_grid[x-1][y])ac += dfs(blocked_grid, x-1, y);
+    if(y-1>=0&& !blocked_grid[x][y-1])ac += dfs(blocked_grid, x, y-1);
+    return ac;
+}
 
 int main(int argc, char* argv[]) {
   if (argc != 2) {
@@ -107,7 +115,7 @@ int main(int argc, char* argv[]) {
 
   // Start here with your code...
 
-
+  cout<<dfs(blocked_grid, start_x, start_y);
 
   return 0;
 }
