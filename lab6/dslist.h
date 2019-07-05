@@ -256,13 +256,13 @@ void dslist<T>::copy_list(const dslist<T>& old) {
 
 template <class T>
 void dslist<T>::destroy_list() {
-
-
-
-
-
-
-
+    if(head_ == 0)return;
+    while(size_--){
+       Node<T> *nxt = head_->next_;
+       delete head_;
+       head_ = nxt;
+    }
+    head_ = tail_ = 0;
 }
 
 #endif
