@@ -131,19 +131,25 @@ dslist<T>& dslist<T>::operator= (const dslist<T>& old) {
 
 template <class T>
 void dslist<T>::push_front(const T& v) {
-
-
-
-
-
+  Node<T>* newp = new Node<T>(v);
+  // special case: initially empty list
+  if (!tail_) {
+    head_ = tail_ = newp;
+  }else {
+    newp->next_ = head_;
+    head_->prev_ = newp;
+    head_ = newp;
+  }
+  ++size_;
 }
 
 template <class T>
 void dslist<T>::pop_front() {
-
-
-
-
+  Node<T> *p = head_;
+  head_ = p->next_;
+  if(head_) head_ -> prev_ = 0;
+  --size_;
+  delete p;
 }
 
 template <class T>
@@ -163,11 +169,11 @@ void dslist<T>::push_back(const T& v) {
 
 template <class T>
 void dslist<T>::pop_back() {
-
-
-
-
-
+  Node<T> *p = tail_;
+  tail_ = p->prev_;
+  if(tail_) tail_ -> next_ = 0;
+  --size_;
+  delete p;
 }
 
 // do these lists look the same (length & contents)?
@@ -257,11 +263,12 @@ void dslist<T>::copy_list(const dslist<T>& old) {
 template <class T>
 void dslist<T>::destroy_list() {
     if(head_ == 0)return;
-    while(size_--){
+    for(int i = 0;i<(int)size_;i++){
        Node<T> *nxt = head_->next_;
        delete head_;
        head_ = nxt;
     }
+    size_ = 0;
     head_ = tail_ = 0;
 }
 
