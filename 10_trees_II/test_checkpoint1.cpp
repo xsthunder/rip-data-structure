@@ -5,19 +5,23 @@
 #include "ds_set.h"
 using namespace std;
 void print_set(ds_set<int> &set){
-    cout<<"begin -> end\n";
+    cout<<"begin -> end ";
+    up_count = 0;
+    down_count = 0;
     for(auto it = set.begin();it!=set.end();++it){
         cout<<*it<<" ";
     }
-    cout<<endl;
-    cout<<"end -> begin \n";
+    cout<<"up_count "<<up_count<<" down_count "<<down_count<<endl;
+    up_count = 0;
+    down_count = 0;
+    cout<<"end -> begin ";
     for(auto it = --set.end();;--it){
         cout<<*it<<" ";
         if(it == set.begin()){
             break;
         }
     }
-    cout<<endl;
+    cout<<"up_count "<<up_count<<" down_count "<<down_count<<endl;
 }
 int main() {
     ds_set<int> set_balanced;

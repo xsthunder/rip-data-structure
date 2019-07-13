@@ -5,6 +5,9 @@
 #include <iostream>
 #include <utility>
 
+int up_count = 0;
+int down_count = 0;
+
 // -------------------------------------------------------------------
 // TREE NODE CLASS 
 template <class T>
@@ -42,10 +45,12 @@ public:
   tree_iterator<T> & operator++() { 
     if (ptr_->right != NULL) { // find the leftmost child of the right node
       ptr_ = ptr_->right;
-      while (ptr_->left != NULL) { ptr_ = ptr_->left; }
+      ++down_count;
+      while (ptr_->left != NULL) { ptr_ = ptr_->left; ++down_count;}
     } else { // go upwards along right branches...  stop after the first left
-      while (ptr_->parent != NULL && ptr_->parent->right == ptr_) { ptr_ = ptr_->parent; }
+      while (ptr_->parent != NULL && ptr_->parent->right == ptr_) { ptr_ = ptr_->parent; ++up_count;}
       ptr_ = ptr_->parent;
+      ++up_count;
     }
     return *this;
   }
@@ -60,19 +65,30 @@ public:
           // find right most leaf
           TreeNode<T> *p;
           p = this->set_->root_;
-          while(p->right)p=p->right;
+          while(p->right){
+            p=p->right;
+            ++down_count;
+          }
           this->ptr_=p;
       }
       else if (this->ptr_->left != NULL){
           // find the right most node in left tree
           TreeNode<T> *p = this->ptr_->left;
-          while(p->right)p=p->right;
+          ++down_count;
+          while(p->right){
+            p=p->right;
+            ++down_count;
+          }
           this->ptr_=p;
       }
       else {
           // go upwards along left branch... stop after the first right
-          while(ptr_->parent != NULL && ptr_->parent->left == ptr_){ ptr_ = ptr_->parent; }
+          while(ptr_->parent != NULL && ptr_->parent->left == ptr_){ 
+              ptr_ = ptr_->parent; 
+              ++up_count;
+          }
           ptr_ = ptr_->parent;
+          ++up_count;
       }
     return *this;
   }
