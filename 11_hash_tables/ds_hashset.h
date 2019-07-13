@@ -167,18 +167,16 @@ public:
 
     // Implement this function for Lab 11, Checkpoint 1
 
-
-
-
-
-
-
-
-
-
-
-
-
+    iterator _find = this->find(key);
+    if(_find != this->end()){
+        // key exists
+        return std::pair< iterator, bool >(_find, false);
+    }
+    else{
+        unsigned int index = m_hash(key)%m_table.size();
+        m_table[index].push_back(key);
+        return std::pair< iterator, bool >(iterator(this, index, --m_table[index].end()), true);
+    }
   }
 
   // Find the key, using hash function, indexing and list find
