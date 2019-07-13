@@ -93,18 +93,7 @@ int main() {
 
 
   // ---------------------------------
-  // CODE TO TEST CHECKPOINT 2, PART 1
-  /*
-  p = set1.begin();
-  std::cout << "\nHere is the result of iterating: \n";
-  for ( p = set1.begin(); p != set1.end(); ++p )
-    std::cout << *p << '\n';
-  */
-
-
-  // ---------------------------------
   // CODE TO TEST CHECKPOINT 2, PART 2
-  /*
   ds_hashset_type set2( set1 );
   std::cout << "set1.size() = " << set1.size() << ", set2.size() = " << set2.size() << std::endl;
 
@@ -131,7 +120,6 @@ int main() {
   std::cout << "The results of iterating:\n";
   for ( p = set2.begin(); p != set2.end(); ++p )
     std::cout << *p << '\n';
-  */
 
   // ---------------
   // OTHER TEST CODE

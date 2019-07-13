@@ -209,15 +209,17 @@ public:
 
   // Find the first entry in the table and create an associated iterator
   iterator begin() {
-
-    // Implement this function for Lab 11, Checkpoint 2, Part 1
-
-
-
-
-
-
-
+      if(m_size == 0){
+          return this->end();
+      }
+      else {
+          for(unsigned int i = 0;i<m_table.size();++i){
+              if(!m_table[i].empty()){
+                  return iterator(this, i, m_table[i].begin());
+              }
+          }
+      }
+      
   }
 
   // Create an end iterator.
