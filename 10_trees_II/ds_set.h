@@ -55,15 +55,25 @@ public:
     return temp;
   }
   tree_iterator<T> & operator--() { 
-
-
-
-
-    // you must write this function
-
-
-
-
+      // end()--
+      if(this->ptr_ == NULL){
+          // find right most leaf
+          TreeNode<T> *p;
+          p = this->set_->root_;
+          while(p->right)p=p->right;
+          this->ptr_=p;
+      }
+      else if (this->ptr_->left != NULL){
+          // find the right most node in left tree
+          TreeNode<T> *p = this->ptr_->left;
+          while(p->right)p=p->right;
+          this->ptr_=p;
+      }
+      else {
+          // go upwards along left branch... stop after the first right
+          while(ptr_->parent != NULL && ptr_->parent->left == ptr_){ ptr_ = ptr_->parent; }
+          ptr_ = ptr_->parent;
+      }
     return *this;
   }
   tree_iterator<T> operator--(int) {
