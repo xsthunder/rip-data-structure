@@ -4,7 +4,7 @@
 #include <cassert>
 
 #include "ds_set.h"
-
+using namespace std;
 int main() {
 
   ds_set<std::string> set1;
@@ -71,23 +71,12 @@ int main() {
   assert(set2.sanity_check());
   assert(set1.size() == set2.size() + 2);
 
+  cout<<"accumulate "<<set1.accumulate("")<<endl;
+  cout<<"accumulate "<<set2.accumulate("")<<endl;
 
-  // Test the iterators!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  ds_set<int> set_int;
+  for(int i =0;i<10;++i)set_int.insert(i);
+  cout<<"accumulate "<<set_int.accumulate(0)<<endl;
 
 
   return 0;

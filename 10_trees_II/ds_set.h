@@ -162,6 +162,13 @@ public:
     return sanity_check(root_);
   }
 
+  T accumulate(T init){
+      for(auto it = this->begin();it!=this->end();++it){
+          init+=*it;
+      }
+      return init;
+  }
+
 private:
   // REPRESENTATION
   TreeNode<T>* root_;
@@ -278,8 +285,6 @@ private:
     }
     return sanity_check(p->left) && sanity_check(p->right);
   }
-
-
 
 };
 
