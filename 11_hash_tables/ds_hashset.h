@@ -175,6 +175,7 @@ public:
     else{
         unsigned int index = m_hash(key)%m_table.size();
         m_table[index].push_back(key);
+        ++m_size;
         return std::pair< iterator, bool >(iterator(this, index, --m_table[index].end()), true);
     }
   }
@@ -242,19 +243,16 @@ public:
 private:
   // resize the table with the same values but a 
   void resize_table(unsigned int new_size) {
-
-    // Implement this function for Lab 11, Checkpoint 2, Part 2
-
-
-
-
-
-
-
-
-
-
-
+      std::vector<KeyType> keys;
+      for(iterator it = this->begin(); it!=this->end();++it){
+          keys.push_back(*it);
+      }
+      m_table.clear();
+      m_table.resize(new_size);
+      m_size = 0;
+      for(const KeyType &key: keys){
+          this->insert(key);
+      }
   }
 };
 #endif
