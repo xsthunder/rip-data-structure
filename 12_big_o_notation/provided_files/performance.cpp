@@ -247,3 +247,4 @@ void vector_test(const std::string* input_data, int input_count, const std::stri
     exit(0);
   }
 }
+
