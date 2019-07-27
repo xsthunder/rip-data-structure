@@ -1,6 +1,9 @@
 #include <iostream>
 #include <cassert>
 #include <string>
+#include <vector>
+#include <algorithm>
+using namespace std;
 
 // simple homemade smart pointers
 #include "ds_smart_pointers.h"
@@ -49,7 +52,12 @@ public:
   // detach a rope connecting this balloon to another
   void removeRope(dsSharedPtr<Balloon> b) { 
     for (int i = 0; i < MAX_NUM_ROPES; i++) {
-      if (ropes[i] == b) { ropes[i] = ropes[num_ropes-1]; num_ropes--; break; }
+      if (ropes[i] == b) { 
+          ropes[i] = ropes[num_ropes-1]; 
+          ropes[num_ropes-1] = NULL;
+          num_ropes--; 
+          break;
+      }
     }
   }
 
@@ -60,7 +68,26 @@ private:
   dsSharedPtr<Balloon>* ropes; 
 };
 
-
+void __deleteAll(dsSharedPtr<Balloon> sp, vector<dsSharedPtr<Balloon> >&v){
+    if(find(v.begin(), v.end(), sp) != v.end()){
+        return;
+    }
+    v.push_back(sp);
+    for(int i = 0;i<sp->numRopes(); ++i){
+        __deleteAll(sp->getRope(i), v);
+    }
+}
+void deleteAll(dsSharedPtr<Balloon> sp){
+    vector<dsSharedPtr<Balloon> > v;
+    __deleteAll(sp, v);
+    sp = NULL;
+    for(auto p: v){
+        while(p->numRopes()>0){
+            p->removeRope(p->getRope(0));
+        }
+    }
+    v.clear();
+}
 // ====================================================
 // ====================================================
 
@@ -68,90 +95,90 @@ int main() {
 
   std::cout << "start of main" << std::endl;
   
-  // ====================================================
-  // SINGLE OWNER SMART POINTERS
-  // ====================================================
+  // // ====================================================
+  // // SINGLE OWNER SMART POINTERS
+  // // ====================================================
 
-  // first, without smart pointers!
-  Balloon* alice(new Balloon("Hello Kitty"));
-  
-  // now, with our homemade single owner smart pointer
-  dsAutoPtr<Balloon> bob(new Balloon("Spiderman"));
+  // // first, without smart pointers!
+  // Balloon* alice(new Balloon("Hello Kitty"));
+  // 
+  // // now, with our homemade single owner smart pointer
+  // dsAutoPtr<Balloon> bob(new Balloon("Spiderman"));
 
-  // both alice & bob work like regular pointers...
-  alice->print();
-  bob->print();
-
-
-
-  //
-  // CHECKPOINT 2A: INSERT NECESSARY EXPLICIT DEALLOCATION
-  //
-  delete alice;
-
-  
-  // ====================================================
-  // SIMPLE SHARED POINTERS
-  // ====================================================
-
-  // first, without smart pointers
-  Balloon* cathy(new Balloon("Buzz Lightyear"));  
-  Balloon* daniel(cathy);
-  Balloon* elaine(new Balloon("Pokemon"));
-  Balloon* fred(elaine);
-  daniel = fred;
-  fred = NULL;
-  elaine = cathy;
-  cathy = NULL;
-  
-
-
-  //
-  // CHECKPOINT 2B: INSERT NECESSARY EXPLICIT DEALLOCATION
-  //
+  // // both alice & bob work like regular pointers...
+  // alice->print();
+  // bob->print();
 
 
 
-  delete daniel;
-  delete elaine;
-  daniel = NULL;
-  elaine = NULL;
+  // //
+  // // CHECKPOINT 2A: INSERT NECESSARY EXPLICIT DEALLOCATION
+  // //
+  // delete alice;
 
-  // now, with our homemade shared pointer
-  dsSharedPtr<Balloon> cathy2(new Balloon("Buzz Lightyear2"));
-  dsSharedPtr<Balloon> daniel2(cathy2);
-  dsSharedPtr<Balloon> elaine2(new Balloon("Pokemon2"));
-  dsSharedPtr<Balloon> fred2(elaine2);
-  daniel2 = fred2;
-  fred2 = NULL;
-  elaine2 = cathy2;
-  cathy2 = NULL;
-   // NOTE:  no explicit destruction required!
-  daniel2 = NULL;
-  elaine2 = NULL;
+  // 
+  // // ====================================================
+  // // SIMPLE SHARED POINTERS
+  // // ====================================================
+
+  // // first, without smart pointers
+  // Balloon* cathy(new Balloon("Buzz Lightyear"));  
+  // Balloon* daniel(cathy);
+  // Balloon* elaine(new Balloon("Pokemon"));
+  // Balloon* fred(elaine);
+  // daniel = fred;
+  // fred = NULL;
+  // elaine = cathy;
+  // cathy = NULL;
+  // 
 
 
-  // ====================================================
-  // SHARED POINTERS WITH INTERCONNECTED STRUCTURES
-  // ====================================================
+  // //
+  // // CHECKPOINT 2B: INSERT NECESSARY EXPLICIT DEALLOCATION
+  // //
 
-  dsSharedPtr<Balloon> georgette(new Balloon("Mr Potato Head"));
-  dsSharedPtr<Balloon> henry(new Balloon("Snoopy"));
 
-  georgette->addRope(henry);
-  henry = new Balloon("Tigger");
-  georgette->addRope(henry);
-  georgette->print();
-  henry->print();
-  
-  dsSharedPtr<Balloon> isabelle(new Balloon("Shrek"));
-  henry->addRope(isabelle);
-  isabelle = new Balloon("Barney the Purple Dinosaur");
-  georgette->addRope(isabelle);
 
-  henry->print();
-  georgette->print();
-  isabelle->print();
+  // delete daniel;
+  // delete elaine;
+  // daniel = NULL;
+  // elaine = NULL;
+
+  // // now, with our homemade shared pointer
+  // dsSharedPtr<Balloon> cathy2(new Balloon("Buzz Lightyear2"));
+  // dsSharedPtr<Balloon> daniel2(cathy2);
+  // dsSharedPtr<Balloon> elaine2(new Balloon("Pokemon2"));
+  // dsSharedPtr<Balloon> fred2(elaine2);
+  // daniel2 = fred2;
+  // fred2 = NULL;
+  // elaine2 = cathy2;
+  // cathy2 = NULL;
+  //  // NOTE:  no explicit destruction required!
+  // daniel2 = NULL;
+  // elaine2 = NULL;
+
+
+  // // ====================================================
+  // // SHARED POINTERS WITH INTERCONNECTED STRUCTURES
+  // // ====================================================
+
+  // dsSharedPtr<Balloon> georgette(new Balloon("Mr Potato Head"));
+  // dsSharedPtr<Balloon> henry(new Balloon("Snoopy"));
+
+  // georgette->addRope(henry);
+  // henry = new Balloon("Tigger");
+  // georgette->addRope(henry);
+  // georgette->print();
+  // henry->print();
+  // 
+  // dsSharedPtr<Balloon> isabelle(new Balloon("Shrek"));
+  // henry->addRope(isabelle);
+  // isabelle = new Balloon("Barney the Purple Dinosaur");
+  // georgette->addRope(isabelle);
+
+  // henry->print();
+  // georgette->print();
+  // isabelle->print();
 
 
   //
@@ -168,12 +195,11 @@ int main() {
   // FOR CHECKPOINT 3
 
 
-  /*
-  Balloon* jacob(new Balloon("Dora the Explorer"));
-  Balloon* katherine(new Balloon("Kung Fu Panda"));
-  Balloon* larry(new Balloon("Scooby Doo"));
-  Balloon* miranda(new Balloon("SpongeBob SquarePants"));
-  Balloon* nicole(new Balloon("Papa Smurf"));
+  dsSharedPtr<Balloon> jacob(new Balloon("Dora the Explorer"));
+  dsSharedPtr<Balloon> katherine(new Balloon("Kung Fu Panda"));
+  dsSharedPtr<Balloon> larry(new Balloon("Scooby Doo"));
+  dsSharedPtr<Balloon> miranda(new Balloon("SpongeBob SquarePants"));
+  dsSharedPtr<Balloon> nicole(new Balloon("Papa Smurf"));
 
   jacob->addRope(katherine);
   katherine->addRope(larry);
@@ -193,7 +219,6 @@ int main() {
   deleteAll(jacob);
   
   jacob = NULL;
-  */
 
 
 
