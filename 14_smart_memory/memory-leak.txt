@@ -1,0 +1,29 @@
+~~Dr.M~~ Dr. Memory version 1.11.17799
+~~Dr.M~~ 
+~~Dr.M~~ Error #1: LEAK 48 direct bytes 0x00007f70172bd410-0x00007f70172bd440 + 80 indirect bytes
+~~Dr.M~~ # 0 replace_operator_new               [/home/travis/build/DynamoRIO/drmemory/common/alloc_replace.c:2900]
+~~Dr.M~~ # 1 main 
+~~Dr.M~~ 
+~~Dr.M~~ Error #2: LEAK 48 direct bytes 0x00007f70172bd590-0x00007f70172bd5c0 + 80 indirect bytes
+~~Dr.M~~ # 0 replace_operator_new               [/home/travis/build/DynamoRIO/drmemory/common/alloc_replace.c:2900]
+~~Dr.M~~ # 1 main 
+~~Dr.M~~ 
+~~Dr.M~~ Error #3: LEAK 48 direct bytes 0x00007f70172bd650-0x00007f70172bd680 + 80 indirect bytes
+~~Dr.M~~ # 0 replace_operator_new               [/home/travis/build/DynamoRIO/drmemory/common/alloc_replace.c:2900]
+~~Dr.M~~ # 1 main 
+~~Dr.M~~ 
+~~Dr.M~~ Error #4: LEAK 48 direct bytes 0x00007f70172bd9b0-0x00007f70172bd9e0 + 619 indirect bytes
+~~Dr.M~~ # 0 replace_operator_new               [/home/travis/build/DynamoRIO/drmemory/common/alloc_replace.c:2900]
+~~Dr.M~~ # 1 main 
+~~Dr.M~~ 
+~~Dr.M~~ ERRORS FOUND:
+~~Dr.M~~       0 unique,     0 total unaddressable access(es)
+~~Dr.M~~       0 unique,     0 total uninitialized access(es)
+~~Dr.M~~       0 unique,     0 total invalid heap argument(s)
+~~Dr.M~~       0 unique,     0 total warning(s)
+~~Dr.M~~       4 unique,     4 total,   1051 byte(s) of leak(s)
+~~Dr.M~~       0 unique,     0 total,      0 byte(s) of possible leak(s)
+~~Dr.M~~ ERRORS IGNORED:
+~~Dr.M~~      16 unique,    34 total,  90083 byte(s) of still-reachable allocation(s)
+~~Dr.M~~          (re-run with "-show_reachable" for details)
+~~Dr.M~~ Details: /home/xs/installation/DrMemory-Linux-1.11.17799-1/drmemory/logs/DrMemory-a.out.224.000/results.txt
