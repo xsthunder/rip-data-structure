@@ -18,7 +18,7 @@ public:
   Balloon(const std::string& name_) : name(name_) {
     std::cout << "Balloon constructor " << name << std::endl;
     num_ropes = 0;
-    ropes = new Balloon*[MAX_NUM_ROPES];
+    ropes = new dsSharedPtr<Balloon>[MAX_NUM_ROPES];
   }
   ~Balloon() {
     std::cout << "Balloon destructor " << name << std::endl;
@@ -29,7 +29,7 @@ public:
   // ACCESSORS
   const std::string& getName() const { return name; }
   int numRopes() const { return num_ropes; }
-  const Balloon* getRope(int i) const { return ropes[i]; }
+  const dsSharedPtr<Balloon> getRope(int i) const { return ropes[i]; }
 
   // print the balloons we are attached to
   void print() { 
@@ -41,13 +41,13 @@ public:
     std::cout << std::endl;
   }
   // add a rope connecting this balloon to another
-  void addRope(Balloon* b) { 
+  void addRope(dsSharedPtr<Balloon> b) { 
     assert (num_ropes < MAX_NUM_ROPES);
     ropes[num_ropes] = b;
     num_ropes++;
   }
   // detach a rope connecting this balloon to another
-  void removeRope(Balloon* b) { 
+  void removeRope(dsSharedPtr<Balloon> b) { 
     for (int i = 0; i < MAX_NUM_ROPES; i++) {
       if (ropes[i] == b) { ropes[i] = ropes[num_ropes-1]; num_ropes--; break; }
     }
@@ -57,7 +57,7 @@ private:
   std::string name;
   int num_ropes;
   // a dynamically allocated C-style array of ropes connecting to other Balloons
-  Balloon** ropes; 
+  dsSharedPtr<Balloon>* ropes; 
 };
 
 
@@ -87,7 +87,7 @@ int main() {
   //
   // CHECKPOINT 2A: INSERT NECESSARY EXPLICIT DEALLOCATION
   //
-
+  delete alice;
 
   
   // ====================================================
@@ -112,9 +112,10 @@ int main() {
 
 
 
+  delete daniel;
+  delete elaine;
   daniel = NULL;
   elaine = NULL;
-  
 
   // now, with our homemade shared pointer
   dsSharedPtr<Balloon> cathy2(new Balloon("Buzz Lightyear2"));
@@ -134,8 +135,8 @@ int main() {
   // SHARED POINTERS WITH INTERCONNECTED STRUCTURES
   // ====================================================
 
-  Balloon* georgette(new Balloon("Mr Potato Head"));
-  Balloon* henry(new Balloon("Snoopy"));
+  dsSharedPtr<Balloon> georgette(new Balloon("Mr Potato Head"));
+  dsSharedPtr<Balloon> henry(new Balloon("Snoopy"));
 
   georgette->addRope(henry);
   henry = new Balloon("Tigger");
@@ -143,7 +144,7 @@ int main() {
   georgette->print();
   henry->print();
   
-  Balloon* isabelle(new Balloon("Shrek"));
+  dsSharedPtr<Balloon> isabelle(new Balloon("Shrek"));
   henry->addRope(isabelle);
   isabelle = new Balloon("Barney the Purple Dinosaur");
   georgette->addRope(isabelle);
